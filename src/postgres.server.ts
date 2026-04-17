@@ -1,4 +1,4 @@
-import { DATABASE_URL } from '$env/static/private'
+import { env } from '$env/dynamic/private'
 import { neon } from '@neondatabase/serverless'
 
-export default neon(DATABASE_URL)
+export default neon(env.DATABASE_URL!)
