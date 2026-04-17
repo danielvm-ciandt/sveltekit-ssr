@@ -1,0 +1,43 @@
+{
+  "type": "module",
+  "name": "sveltekit-ssr",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "fmt": "prettier --write '**/*' --ignore-unknown",
+    "fmt:check": "prettier --check '**/*' --ignore-unknown",
+    "lint": "eslint .",
+    "preflight": "pnpm run fmt:check && pnpm run lint && pnpm run check && pnpm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@sveltejs/adapter-vercel": "^6.3.3",
+    "@sveltejs/kit": "^2.57.0",
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
+    "@tailwindcss/vite": "^4.2.0",
+    "eslint": "^10.2.1",
+    "eslint-plugin-svelte": "^3.17.0",
+    "globals": "^17.5.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-svelte": "^3.2.2",
+    "prettier-plugin-tailwindcss": "^0.6.0",
+    "semantic-release": "^25.0.3",
+    "svelte": "^5.55.0",
+    "svelte-check": "^4.4.0",
+    "tailwindcss": "^4.2.0",
+    "tslib": "^2.4.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.58.2",
+    "vite": "^8.0.0"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0"
+  },
+  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319"
+}
